@@ -1,0 +1,214 @@
+.wave {
+    animation-name: wave-animation; /* Refers to the name of your @keyframes element below */
+    animation-duration: 2.1s; /* Change to speed up or slow down */
+    animation-iteration-count: infinite; /* Never stop waving :) */
+    transform-origin: 70% 70%; /* Pivot around the bottom-left palm */
+    display: inline-block;
+  }
+
+
+@keyframes wave-animation {
+    0% {
+      transform: rotate(0deg);
+    }
+    10% {
+      transform: rotate(14deg);
+    } /* The following five values can be played with to make the waving more or less extreme */
+    20% {
+      transform: rotate(-8deg);
+    }
+    30% {
+      transform: rotate(14deg);
+    }
+    40% {
+      transform: rotate(-4deg);
+    }
+    50% {
+      transform: rotate(10deg);
+    }
+    60% {
+      transform: rotate(0deg);
+    } /* Reset for the last half to pause */
+    100% {
+      transform: rotate(0deg);
+    }
+  }
+  
+  .Typewriter__wrapper {
+    font-size: 1.3em !important;
+    color: #f08e98 !important;
+    font-weight: 500 !important;
+  }
+  .Typewriter__cursor {
+    font-size: 1.5em !important;
+    color: #b5d0ed !important;
+  }
+
+  .heading-name {
+    font-size: 1.0em !important;
+    padding-left: 5px !important;
+  }
+  
+  .main-name {
+    color: #b5a9ee;
+  }
+
+  .about-activity {
+    list-style: none !important;
+    text-align: left !important;
+    padding-left: 1px !important;
+  }
+  .quote-card-view {
+    border: none !important;
+    color: white !important;
+    background-color: transparent !important;
+  }
+  .blockquote-footer {
+    color: #a588c0 !important;
+  }
+  @media (max-width: 767px) {
+    .about-img {
+      padding-top: 0 !important;
+    }
+  }
+  .tech-icons {
+    font-size: 4.5em !important;
+    margin: 15px !important;
+    padding: 10px !important;
+    opacity: 0.93 !important;
+    border: 1.7px solid rgba(167, 235, 239, 0.637) !important;
+    vertical-align: middle !important;
+    text-align: center !important;
+    border-radius: 5px !important;
+    display: table !important;
+    box-shadow: 4px 5px 4px 3px rgba(89, 4, 168, 0.137) !important;
+    overflow: hidden !important;
+    transition: all 0.4s ease 0s !important;
+  }
+  @media (max-width: 767px) {
+    .tech-icons {
+      margin: 10px !important;
+    }
+  }
+  .tech-icons:hover {
+    transform: scale(1.05) !important;
+    overflow: hidden !important;
+    border: 2.2px solid rgba(197, 115, 230, 0.883) !important;
+  }
+  .tech-icon-images {
+    padding: 20px !important;
+    line-height: 1.6 !important;
+  }
+  .about-design-section {
+    position: relative;
+    padding-bottom: 70px !important;
+    padding-top: 70px !important;
+  }
+  .about {
+    position: relative !important;
+    padding-top: 150px !important;
+    padding-bottom: 30px !important;
+    background-image: var(--section-background-color) !important;
+    color: white !important;
+  }
+
+  .sec_sp {
+    margin-bottom: calc(3rem + 5.128vw)
+}
+
+.table td,
+.table th {
+    color: var(--text-color);
+}
+
+.t_border {
+    border-color: var(--text-color) !important;
+}
+
+.progress-title {
+    font-size: 16px;
+    font-weight: 700;
+    margin: 15px 0 20px;
+    font-family: 'Raleway';
+}
+
+.progress {
+    height: 5px;
+    background: var(--secondary);
+    border-radius: 0;
+    box-shadow: none;
+    margin-bottom: 30px;
+    overflow: visible;
+}
+
+.progress .progress-bar {
+    position: relative;
+    background: var(--text-color);
+    animation: animate-positive 2s;
+    overflow: visible;
+    opacity: 0.9;
+}
+
+.progress .progress-value {
+    position: absolute;
+    top: -30px;
+    right: 8px;
+    font-size: 17px;
+    font-weight: bold;
+    font-style: italic;
+    color: var(--text-color);
+}
+
+@-webkit-keyframes animate-positive {
+    0% {
+        width: 0%;
+    }
+}
+
+@keyframes animate-positive {
+    0% {
+        width: 0%;
+    }
+}
+
+.section-title {
+    font-size: 45px;
+}
+
+.service__title {
+    padding: 8px 0;
+    border-bottom: solid 2px var(--secondary-color);
+}
+
+.service-section .service-category-title {
+    padding-bottom: 4px;
+}
+
+
+/*! CSS Used keyframes */
+
+@-webkit-keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        -webkit-transform: translate3d(0, 100%, 0);
+        transform: translate3d(0, 100%, 0);
+    }
+    to {
+        opacity: 1;
+        -webkit-transform: translateZ(0);
+        transform: translateZ(0);
+    }
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        -webkit-transform: translate3d(0, 100%, 0);
+        transform: translate3d(0, 100%, 0);
+    }
+    to {
+        opacity: 1;
+        -webkit-transform: translateZ(0);
+        transform: translateZ(0);
+    }
+}
