@@ -1,5 +1,5 @@
 import React from 'react'
-import profile from '../assets/profile.png';
+import profile from '../assets/chandu-profile.png';
 import {BsArrowRightCircleFill} from 'react-icons/bs';
 import { Link } from "react-scroll";
 import Typewriter from "typewriter-effect";
@@ -23,7 +23,7 @@ const Home = () => {
                     <Typewriter
                         options={{
                             strings: [
-                            "I am currently a Student...",
+                            "I am currently a Student..",
                             ],
                             autoStart: true,
                             loop: true,
@@ -51,7 +51,7 @@ const Home = () => {
             </div>
             <div>
                 <img src={profile} alt="my profile"
-                className='rounded-3xl mx-auto w-23 '/>
+                className='rounded-3xl mx-auto w-23'/>
             </div>
         </div>
     </div>

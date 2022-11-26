@@ -61,7 +61,7 @@ const Portfolio = () => {
                 className="rounded-md duration-200 hover:scale-105"
               />
               <div className="flex items-center justify-center">
-              <a href="http://github.com/saic89010" className=" text-2xl font-bold project__btn">Ckeck Out</a><br/>
+              <a href="http://github.com/saic89010" className=" text-2xl font-bold project__btn">Check Out</a><br/>
               </div>
             </div>
           ))}

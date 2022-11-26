@@ -45,7 +45,7 @@ const SocialLinks = () => {
                 Resume <BsPersonBoundingBox size={30}/>
                 </>
             ),
-            href: '/SAICHANDU_RESUME.pdf',
+            href: '/CHANDU_MAINRESUME.pdf',
             style: 'rounded-br-md',
             download: true,
         },

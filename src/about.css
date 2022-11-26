@@ -8,6 +8,7 @@ img.project__img {
     transition: .4s;
     opacity: .7;
     position: relative;
+    
 }
 img.project__img::after{
     content: '';
