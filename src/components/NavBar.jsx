@@ -34,7 +34,7 @@ const NavBar = () => {
     <div className='flex justify-between items-center
      w-full h-20 px-4 text-white bg-black fixed'>
         <div>
-            <a className='text-5xl font-signature ml-2' href='/home'>chandu</a>
+            <h className='text-5xl font-signature ml-2'>chandu</h>
         </div>
 
         <ul className='hidden md:flex'>
