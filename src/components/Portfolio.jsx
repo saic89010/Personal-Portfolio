@@ -9,63 +9,67 @@ import p6 from "../assets/portfolio/p6.png";
 const Portfolio = () => {
 
 
-  const portfolios = [
-    {
-      id: 1,
-      src: p1,
-      href: "https://github.com/saic89010/Automobile-System",
-    },
-    {
-      id: 2,
-      src: p4,
-    },
-    {
-      id: 3,
-      src: p3,
-    },
-    {
-      id: 4,
-      src: p5,
-    },
-    {
-      id: 5,
-      src: p2,
-    },
-    {
-      id: 6,
-      src: p6,
-    },
-  ];
-
+  
   return (
     <div
-      name="portfolio"
+      name="blogs"
       className="bg-gradient-to-b from-black via-black
       to-gray-800 text-white md:h-screen"
     >
       <div className="max-w-screen-lg p-10 mx-auto flex flex-col justify-center w-full h-full">
         <div className="pb-8">
-          <p className="text-4xl font-bold inline border-b-4 border-fuchsia-400">
-            My Blogs & Portfolio
+          <p className="text-4xl font-bold inline border-b-4 border-fuchsia-400" style={{marginLeft:'350px'}}>
+            My Projects & Blogs
           </p>
-          <p className="py-6 font-semibold">Apart from coding, I have interest towards writing blog posts,
-          designing posters and content writing which helps us to uptake some new skills in us.</p>
+          <p className="text-xl py-6 font-bold">Engaging in diverse projects and reading insightful blogs has enriched my learning experience. 
+          Projects allowed me to apply knowledge practically, honing problem-solving skills. Blogs introduced fresh perspectives, 
+          latest trends, and valuable tips, expanding my understanding and keeping me updated with industry developments, fostering 
+          continuous growth and expertise.</p>
         </div>
+        
+        <div className="portrow">
+          <div className="portcol">
+          <div class="card1">
+                  <img src={p1} alt="no"/>
+                  <a href="https://www.linkedin.com/posts/sai-chandu-a8ba0320a_experience-our-article-with-your-great-activity-6857908947240796160-a9GT?utm_source=share&utm_medium=member_desktop" target="blank">Check Out</a>
+                </div>
+          </div>
+          <div className="portcol">
+          <div class="card1">
+                  <img src={p2} alt="no"/>
+                  <a href="https://www.linkedin.com/posts/sai-chandu-a8ba0320a_loveyourtime-activity-6866352529794564096-C6q6?utm_source=share&utm_medium=member_desktop" target="blank">Check Out</a>
+                </div>
+          </div>
+          <div className="portcol">
+          <div class="card1">
+                  <img src={p3} alt="no"/>
+                  <a href="https://www.linkedin.com/posts/sai-chandu-a8ba0320a_love-comment-activity-6864515593199058944-8aZY?utm_source=share&utm_medium=member_desktop" target="blank">Check Out</a>
+                </div>
+          </div>
+          <div className="portcol">
+          <div class="card1">
+                  <img src={p4} alt="no"/>
+                  <a href="https://github.com/saic89010/Automobile-System" target="blank">Check Out</a>
+                </div>
+          </div>
+          <div className="portcol">
+          <div class="card1">
+                  <img src={p5} alt="no"/>
+                  <a href="https://github.com/saic89010/Healthcare" target="blank">Check Out</a>
+                </div>
+          </div>
+          <div className="portcol">
+          <div class="card1" style={{marginLeft:'-630px', marginTop:'-207px'}}>
+                  <img src={p6} alt="no"/>
+                  <a href="https://github.com/saic89010/Automobile-System" target="blank">Check Out</a>
+                </div>
+          </div>
 
-        <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-12 sm:px-0">
-          {portfolios.map(({ id, src }) => (
-            <div key={id} className="shadow-md shadow-gray-600 rounded-lg">
-              <img
-                src={src}
-                alt=""
-                className="rounded-md duration-200 hover:scale-105"
-              />
-              <div className="flex items-center justify-center">
-              <a href="http://github.com/saic89010" className=" text-2xl font-bold project__btn">Check Out</a><br/>
-              </div>
-            </div>
-          ))}
+          
         </div>
+        
+
+        
       </div>
     </div>
   );

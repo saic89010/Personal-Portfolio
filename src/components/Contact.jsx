@@ -1,4 +1,6 @@
 import React from "react";
+import contactpic from "../assets/contact.jpg";
+import '../style.css';
 
 const Contact = () => {
   return (
@@ -9,17 +11,20 @@ const Contact = () => {
     >
       <div className="flex flex-col p-4 justify-center max-w-screen-lg mx-auto h-full">
         <div className="pb-8">
-          <p className="text-4xl font-bold inline border-b-4 border-sky-700">
-            Contact
+          <p className="text-4xl font-bold inline border-b-4 border-sky-700" style={{marginLeft:'400px'}}>
+            Get in touch
           </p>
-          <p className="py-6">Submit the form below to get in touch with me.</p>
+          <p className="text-xl py-6 font-semibold" style={{fontSize:'25px', marginLeft:'80px'}}>If you want to connect you can contact me on via the form below.</p>
         </div>
+
+        
 
         <div className=" flex justify-center items-center">
           <form
             action="https://getform.io/f/5c3e79a9-31f4-4616-bc6a-680f374b0408"
             method="POST"
             className=" flex flex-col w-full md:w-1/2"
+            style={{marginLeft:'100px', marginRight:'150px'}}
           >
             <input
               type="text"
@@ -27,6 +32,7 @@ const Contact = () => {
               required
               placeholder="Enter your name"
               className="p-2 bg-transparent border-2 rounded-md text-white focus:outline-none"
+              size='50'
             />
             <input
               type="text"
@@ -47,9 +53,16 @@ const Contact = () => {
               Let's Chat
             </button>
           </form>
+          <div className="contactpic">
+                <img src={contactpic} alt="my profile"
+                />
+                
+            </div>
         </div>
         
+        
       </div>
+      
     </div>
   );
 };

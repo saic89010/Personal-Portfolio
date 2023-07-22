@@ -1,197 +1,107 @@
 
 import React from 'react'
+import '../style.css';
+import profile from '../assets/pic1.jpg';
+import profile1 from '../assets/pic2.jpg';
+import profile2 from '../assets/pic3.jpg';
+import profile3 from '../assets/pic4.jpg';
+import profile4 from '../assets/pic5.jpg';
+import profile5 from '../assets/pic6.jpg';
 /*import { MdDoubleArrow } from "react-icons/md";
-import profile from '../assets/profile.png';*/
+import profile from '../assets/profile.png';
 import {Col, Row } from "react-bootstrap";
-/*import profile from '../assets/profile.png';*/
-import {
-  SiHackerrank,
-  SiLeetcode,
-  SiCodechef,
-  SiCodeforces,
-  SiUnity,
-  SiSpotify,
-} from "react-icons/si";
+import profile from '../assets/profile.png';*/
+
 
 const About = () => {
   return (
-    <div name='about' className='f-screen w-full bg-gradient-to-b 
+    <div name='about me' className='f-screen w-full bg-gradient-to-b 
     from-gray-800 to-black text-white'>
         <div>
         <div className='max-w-screen-lg p-4 mx-auto flex flex-col justify-center
         w-full h-full'>
             <div className='pb-5'>
                 <h className='text-4xl font-bold inline border-b-4
-                border-cyan-500' style={{alignItems:"center"}}>
-                About
+                border-cyan-500' style={{alignItems:"center", marginLeft:'350px'}}>
+                Know more about me
                 </h><br/>
-            <h1 className="py-6 text-1xl font-semibold" >I practise coding in many online global platforms and I also like to 
-                design some tools and build some graphic designing. These platforms have given me an opportunity to 
-                practise for different companies and make some certifications which given me an immense value to my profile.
-                In, my free time I will listen music and learn drawing, painting. 
+                <div className='btn-group' style={{marginTop:'15px'}}>
+                  <button style={{marginLeft:'20px'}}>Biography</button>
+                  <button style={{marginLeft:'50px'}}>Education</button>
+                  <button style={{marginLeft:'50px'}}>Childhood</button>
+                  <button style={{marginLeft:'50px'}}>Career</button>
+                </div><br/><br/>
+
+                <h1 style={{marginTop:'10px', fontSize:'27px', fontWeight:'bold', color:'yellow', marginLeft:'10px', marginRight:'10px'}} className='bio'>Biography</h1>
+            <h1 className="py-10 text-1.7xl font-semibold" style={{fontSize:'19px', marginLeft:'10px', marginRight:'440px'}}>
+            I came from a family of teachers. But I knew I don't wanted to become a teacher 
+            as there was no plan at start, I planned to take engineering as my first step. I got into an engineering college.
+            My college life was going smooth but apart from academics I wanted to do something different and then thought of starting a
+            podcast. The academics results are going smooth but something is pushing me backwards. I then realized I need to begin a 
+            new journey on my own.
             </h1><br/>
+            <div className='pic1'>
+                <img src={profile} alt="my profile"
+                className='rounded-2xl mx-auto'/>
+            </div>
             
-    
-            <Row style={{ justifyContent: "center", paddingBottom: "50px", alignItems: "right"}}>
-                <Col xs={4} md={2} className="tech-icons">
-                    <SiHackerrank />
-                </Col>
-                <Col xs={4} md={2} className="tech-icons">
-                    <SiLeetcode />
-                </Col>
-                <Col xs={4} md={2} className="tech-icons">
-                    <SiCodechef />
-                </Col>
-                <Col xs={4} md={2} className="tech-icons">
-                    <SiUnity />
-                </Col>
-                <Col xs={4} md={2} className="tech-icons">
-                    <SiCodeforces />
-                </Col>
-                <Col xs={4} md={2} className="tech-icons">
-                    <SiSpotify />
-                </Col>
-            </Row>  
-
-            <h className="py-6 text-1xl font-semibold" >These are the some skills which I would like to learn in my free time and it looks so funny to 
-              experiment on unknowm one's.😄 As a enthusiastic student we need to learn so many skills to build our confidence and 
-              try to experiment  through it is wrong but at a later stage it would seems to be great to us.</h><br/>
             
-            <div className="service component__space" id="Services">
 
-      <div className="container">
-        <div className="row">
-          <div className="col__3">
-            <div className="service__box pointer">
-              <div className="icon">
-                <svg
-                  stroke="currentColor"
-                  fill="none"
-                  stroke-width="2"
-                  viewBox="0 0 24 24"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  height="1em"
-                  width="1em"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path d="M2 16.1A5 5 0 0 1 5.9 20M2 12.05A9 9 0 0 1 9.95 20M2 8V6a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2h-6"></path>
-                  <line x1="2" y1="20" x2="2" y2="20"></line>
-                </svg>
-              </div>
-              <div className="service__meta">
-                <h1 className="service__text">Learning Music</h1>
-                <p className="p service__text p__color">
-                  I want to sing any song
-                </p>
-                <p className="p service__text p__color">
-                  but nothing looks likes the same
-                </p>
-                <p className="p service__text p__color">as it is in the song.😃</p>
-              </div>
+            <h1 style={{marginTop:'60px', fontSize:'27px', fontWeight:'bold', color:'yellow', marginLeft:'10px', marginRight:'40px'}} className='edu'>Education</h1>
+            <h1 className="py-10 text-1.7xl font-semibold" style={{fontSize:'19px', marginLeft:'10px'}}>
+            I have taken Computer Science in engineering and after passing a couple a semesters I got bored in coding and slightly
+            my interests changed into web development. I used spend some ample of time in building websites for projects and it also 
+            finally ended up. I have got into an internship and worked very well. But while in that period I used to think that something need to
+            be done unique on my own and then started picking up some interests past the office hours.
+            </h1><br/>
+
+            <div className='pic4'>
+                <img src={profile3} alt="my profile"
+                className='rounded-2xl mx-auto'/>
             </div>
-          </div>
-
-          <div className="col__3">
-            <div className="service__box pointer">
-              <div className="icon">
-                <svg
-                  stroke="currentColor"
-                  fill="none"
-                  stroke-width="2"
-                  viewBox="0 0 24 24"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  height="1em"
-                  width="1em"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
-                  <polyline points="2 17 12 22 22 17"></polyline>
-                  <polyline points="2 12 12 17 22 12"></polyline>
-                </svg>
-              </div>
-              <div className="service__meta">
-                <h1 className="service__text">Website Development</h1>
-                <p className="p service__text p__color">
-                  It is useful for everyone to just
-                </p>
-                <p className="p service__text p__color">
-                  build their own website and to 
-                </p>
-                <p className="p service__text p__color">communicate with others through it.</p>
-              </div>
+            <div className='pic3'>
+                <img src={profile2} alt="my profile"
+                className='rounded-2xl mx-auto'/>
             </div>
-          </div>
-
-          <div className="col__3">
-            <div className="service__box pointer">
-              <div className="icon">
-                <svg
-                  stroke="currentColor"
-                  fill="none"
-                  stroke-width="2"
-                  viewBox="0 0 24 24"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  height="1em"
-                  width="1em"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
-                  <circle cx="9" cy="7" r="4"></circle>
-                  <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
-                  <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
-                </svg>
-              </div>
-              <div className="service__meta">
-                <h1 className="service__text">Content Writing</h1>
-                <p className="p service__text p__color">
-                  It is the most awaited skill
-                </p>
-                <p className="p service__text p__color">
-                  which will be used to build our 
-                </p>
-                <p className="p service__text p__color">proficiency and creativity.</p>
-              </div>
+            <div className='pic2'>
+                <img src={profile1} alt="my profile"
+                className='rounded-2xl mx-auto'/>
             </div>
-          </div>
-
-          <div className="col__3">
-            <div className="service__box pointer">
-              <div className="icon">
-                <svg
-                  stroke="currentColor"
-                  fill="none"
-                  stroke-width="2"
-                  viewBox="0 0 24 24"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  height="1em"
-                  width="1em"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
-                  <line x1="8" y1="21" x2="16" y2="21"></line>
-                  <line x1="12" y1="17" x2="12" y2="21"></line>
-                </svg>
-              </div>
-              <div className="service__meta">
-                <h1 className="service__text">Mobile App Development</h1>
-                <p className="p service__text p__color">
-                  If we want to convert our
-                </p>
-                <p className="p service__text p__color">
-                  own website into an application
-                </p>
-                <p className="p service__text p__color">then it looks so adorable.</p>
-              </div>
+            <div className='pic5'>
+                <img src={profile4} alt="my profile"
+                className='rounded-2xl mx-auto'/>
             </div>
-          </div>
 
-        </div>
-      </div>
-    </div>
+            <h1 style={{marginTop:'60px', fontSize:'27px', fontWeight:'bold', color:'yellow', marginLeft:'10px', marginRight:'40px'}} className='edu'>Childhood</h1>
+            <h1 className="py-10 text-1.7xl font-semibold" style={{fontSize:'19px', marginLeft:'10px'}}>
+            In my childhood, I used to be a shy but confident person. I rose to talk with various kind of people at every moment
+            but my shyness had pulled me back every time. Due to this I didn't make much friends and lost many people. But now I have enjoyed a lot 
+            through my learnings. And my mom and dad have encouraged me a lot to participate in various events. Then, I got
+            into sprint running, karate and painting and I went forward winning couple of competitions.
+            </h1><br/>
+
+            <div className='pic6'>
+                <img src={profile5} alt="my profile"
+                className='rounded-2xl mx-auto'/>
+            </div>
+            
+            <h1 style={{marginTop:'-350px', fontSize:'27px', fontWeight:'bold', color:'yellow', marginLeft:'10px', marginRight:'40px'}} className='edu'>Career</h1>
+            <h1 className="py-10 text-1.7xl font-semibold" style={{fontSize:'19px', marginLeft:'10px', marginRight:'300px'}}>
+            <h1 >Start of Podcasting</h1>
+            <h1 className="py-10 text-1.7xl font-semibold" style={{fontSize:'19px', marginLeft:'5px'}}>
+            At beginning, I have no idea on starting my first podcast. I have gone through many resources on how to start a podcast, what are 
+            platforms to record, host and publish the episode. I have learnt from youtube and gradually recorded my first episode on the perspective
+            of leading a life. The episode landed on anchor platform and there are only few views as it was start. As, I was new to content creation
+            I started learning and will try to rise the standards of my show by continouing it as my passion. I would love to compete with many 
+            passionate creators and will expand my network. 
+            </h1>
+            </h1>
+            <h1 className="py-10 text-1.7xl font-semibold" style={{fontSize:'19px', marginLeft:'15px', marginRight:'5px', marginTop:'-100px'}}>
+            I am learning, exploring and expanding my network every day to acquire knowledge from them. From my career, I have gone through struggling phase,
+            where not knowing what to do, where to start, boring life. Then I started to meet new people, connecting with them, had few conversations
+            and bonding that boosts strength, energy and the way of thinking.
+            </h1>
+
     </div>
         </div> 
         </div>  

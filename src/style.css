@@ -33,7 +33,111 @@
       transform: rotate(0deg);
     }
   }
+  .portcol {
+    float: left;
+    width: 30%;
+    padding: 0 10px;
+    margin-left: 5px;
+    margin: 10px;
+  }
   
+  /* Remove extra left and right margins, due to padding */
+  .portrow {margin: 0 -20px;}
+  
+  /* Clear floats after the columns */
+  .portrow:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Responsive columns */
+  @media screen and (max-width: 600px) {
+    .portcol {
+      width: 100%;
+      display: block;
+      margin-bottom: 30px;
+      column-count: 3;
+    }
+  }
+  
+
+  
+  .column {
+    float: left;
+    width: 30%;
+    padding: 0 10px;
+    margin-left: 5px;
+    margin: 10px;
+  }
+  
+  /* Remove extra left and right margins, due to padding */
+  .row {margin: 0 -15px;}
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Responsive columns */
+  @media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+      display: block;
+      margin-bottom: 20px;
+    }
+  }
+  
+  /* Style the counter cards */
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(247, 243, 243, 0.2);
+    padding: 16px;
+    text-align: center;
+    background-color: whitesmoke;
+    color: darkmagenta;
+    font-weight: bolder;
+    font-size: larger;
+  }
+
+
+  /* Clear floats (clearfix hack) */
+  .btn-group button{
+    display: table;
+    width: 200px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 18px;
+    font-family: sans-serif;
+    text-decoration: none;
+    color: #f6f0f0;
+    border: 2px solid #eeeaea;
+    letter-spacing: 2px;
+    text-align: center;
+    position: relative;
+    transition: all .35s;
+    float: left;
+    margin-top: 10px;
+    border-radius: 7px;
+    font-weight: bolder;
+  }
+  
+  .btn-group button span{
+    position: relative;
+    z-index: 2;
+  }
+  
+  .btn-group button:hover{
+    color: #d0a1f0;
+  }
+  
+  .btn-group button:hover:after{
+    width: 100%;
+    color: #d70e0e;
+  }
+
+
   .Typewriter__wrapper {
     font-size: 1.3em !important;
     color: #f08e98 !important;
@@ -52,6 +156,89 @@
   .main-name {
     color: #b5a9ee;
   }
+
+  .pic1{
+    width: 100%;
+    height: 30%;
+    margin-top: -330px;
+    margin-left: 263px;
+  }
+  .contactpic{
+  
+      width: 80%;
+      height: 91%;
+      margin-bottom: 50px;
+      border: 10px solid white;
+      
+  }
+
+  .card1 {
+    border: 3px solid #ddd;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 16px;
+    width: 300px;
+    background-color: gray;
+    text-align: center;
+    float: left;
+  }
+  
+  .card1 h2 {
+    margin-top: 0;
+    color: #333;
+  }
+  
+  .card1 p {
+    color: #666;
+  }
+  
+  .card1 a {
+    background-color: #a0e6e8;
+    color: #171313;
+    border: none;
+    padding: 10px 30px;
+    margin-top: 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bolder;
+    transition: background-color 0.3s;
+  }
+  
+  .card1 a:hover {
+    background-color: #5d9dea;
+  }
+  
+.pic5{
+  width: 20%;
+  height: 100%;
+  margin-top: -640px;
+  margin-left: 830px;
+  margin-bottom: 400px;
+}
+
+.pic4{
+  width: 60%;
+  height: 60%;
+  margin-left: 210px;
+}
+  .pic3{
+    height: 50%;
+    width: 20%;
+    margin-top: -200px;
+  }
+  .pic2{
+    width: 100%;
+    height: 10%;
+    margin-left: 80px;
+    margin-top: -230px;
+  }
+  .pic6{
+    height: 30%;
+    width: 30%;
+    margin-left: 700px;
+    margin-top: -50px;
+  }
+  
 
   .about-activity {
     list-style: none !important;
@@ -183,6 +370,7 @@
 .service-section .service-category-title {
     padding-bottom: 4px;
 }
+
 
 
 /*! CSS Used keyframes */

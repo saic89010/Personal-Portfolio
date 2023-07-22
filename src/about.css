@@ -100,12 +100,13 @@ h4.project__text {
 }
 
 a.project__btn {
-    padding: 15px 30px;
+    padding: 15px 20px;
     border: 1px solid #ffffff87;
     border-radius: 5px;
     transition: .4s ease;
+    size: 10px;
 }
 a.project__btn:hover{
-    background-color: #88c5f5;
+    background-color: #a2d9ec;
     border: 2px solid #e5b1ec;
 }
